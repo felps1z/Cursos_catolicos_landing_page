@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Católicos - Santa Maria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">CURSOS CATÓLICOS SANTA MARIA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#apologia">Apologia</a></li>
+                <li><a href="#estudo-biblico">Estudo Bíblico</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cursos" class="cursos-section">
+        <h2>CURSOS</h2>
+        <div class="carousel-container" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <button class="carousel-prev" onclick="atras()"
+                style="cursor: pointer; font-size: 24px; background: none; border: none;">❮</button>
+
+            <div class="carousel-active-panel" style="width: 100%; max-width: 900px; height: 450px;">
+                <iframe id="teste" name="teste" src="documento/index.html"
+                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+            </div>
+
+            <button class="carousel-next" onclick="frente()"
+                style="cursor: pointer; font-size: 24px; background: none; border: none;">❯</button>
+        </div>
+    </section>
+
+    <section id="apologia" class="apologia-galeria">
+        <h2>APOLOGIA CATÓLICA</h2>
+        <p>Em defesa da Igreja Católica...</p>
+
+        <nav class="categorias-apologia">
+            <a class="active" onclick="irPara(0)">IMAGENS</a>
+            <a onclick="irPara(1)">MARIA</a>
+            <a onclick="irPara(2)">OBRAS</a>
+            <a onclick="irPara(3)">PAPA</a>
+            <a onclick="irPara(4)">EUCARISTIA</a>
+        </nav>
+
+        <div class="cards-container" id="trilho-apologia">
+            <a href="cards_documento/artigo_serpente.html" class="card"><img src="img/serpente.jpg"><span>A SERPENTE DE BRONZE</span></a>
+            <a href="artigo_arca.html" class="card"><img src="img/arca.webp"><span>A ARCA DA ALIANÇA</span></a>
+            <a href="artigo_latria.html" class="card"><img src="img/latria_e_dulia.jpg"><span>LATRIA VS. DULIA</span></a>
+            
+            <a href="artigo_nova_eva.html" class="card"><img src="img/nova_eva.jpeg"><span>A NOVA EVA</span></a>
+            <a href="artigo_theotokos.html" class="card"><img src="img/mae_de_Deus.jpg"><span>MÃE DE DEUS</span></a>
+            <a href="artigo_intercessora.html" class="card"><img src="img/intercessora.png"><span>INTERCESSORA</span></a>
+
+            <a href="artigo_tiago.html" class="card"><img src="img/carta_tiago.jpg"><span>CARTA DE TIAGO</span></a>
+            <a href="artigo_jovem_rico.html" class="card"><img src="img/jovem_rico.webp"><span>O JOVEM RICO</span></a>
+            <a href="artigo_juizo.html" class="card"><img src="img/juizo final.jpg"><span>O JUÍZO FINAL</span></a>
+
+            <a href="artigo_chaves.html" class="card"><img src="img/chaves.jpg"><span>AS CHAVES DO REINO</span></a>
+            <a href="artigo_sucessao.html" class="card"><img src="img/sucessao.jpg"><span>SUCESSÃO APOSTÓLICA</span></a>
+            <a href="artigo_rocha.html" class="card"><img src="img/rocha.jpg"><span>A ROCHA</span></a>
+
+            <a href="artigo_joao6.html" class="card"><img src="img/joao.jpg"><span>DISCURSO DE JOÃO 6</span></a>
+            <a href="artigo_ceia.html" class="card"><img src="img/ceia.webp"><span>A ÚLTIMA CEIA</span></a>
+            <a href="artigo_primeiros.html" class="card"><img src="img/primeiros.jpg"><span>OS PRIMEIROS CRISTÃOS</span></a>
+        </div>
+
+        <div class="controles">
+            <button class="seta">❮</button>
+            <button class="seta">❯</button>
+        </div>
+
+        <a href="#" class="cta-button mustard-bg">Ver tudo</a>
+    </section>
+
+    <section id="estudo-biblico" class="estudo-biblico-section">
+        <h2>ESTUDO BÍBLICO</h2>
+        <div class="table-container">
+            <table class="biblico-table">
+                <tbody>
+                    <tr>
+                        <td><img src="img/genesis.png" alt="Gênesis" class="table-thumb"></td>
+                        <td><img src="img/exodo.png" alt="Êxodo" class="table-thumb"></td>
+                        <td><img src="img/levitico.png" alt="Levítico" class="table-thumb"></td>
+                        <td><img src="img/numeros.png" alt="Levítico" class="table-thumb"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/deuteronomio.png" alt="Levítico" class="table-thumb"></td>
+                        <td><img src="img/jo.png" alt="Levítico" class="table-thumb"></td>
+                        <td><img src="img/daniel.png" alt="Levítico" class="table-thumb"></td>
+                        <td><img src="img/samuel.png" alt="Levítico" class="table-thumb"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="mais-conteudo-section">
+        <div class="divisoria-dourada">
+            <h2>MAIS CONTEÚDO</h2>
+            <p>Tenha acesso aos mais diversos conteúdos do nosso site</p>
+        </div>
+
+        <div class="vitrine-carousel-container">
+            <div class="vitrine-track" id="vitrineTrack">
+                <div class="vitrine-item">
+                    <img src="img/santo_agostinho.jpg" alt="Conteúdo 1">
+                </div>
+                <div class="vitrine-item">
+                    <img src="img/genesis.png" alt="Conteúdo 2">
+                </div>
+                <div class="vitrine-item">
+                    <img src="img/exodo.webp" alt="Conteúdo 3">
+                </div>
+                <div class="vitrine-item">
+                    <img src="img/levitico.jpg" alt="Conteúdo 4">
+                </div>
+                 <div class="vitrine-item">
+                    <img src="img/santo_agostinho.jpg" alt="Conteúdo 5">
+                </div>
+                <div class="vitrine-item">
+                    <img src="img/genesis.png" alt="Conteúdo 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato-section dark-bg">
+        <h2>CONTATO</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit" class="cta-button mustard-bg">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cursos Católicos - Santa Maria. Todos os direitos reservados.</p>
+    </footer>
+
+    <script LANGUAGE="JAVASCRIPT">
+        var i;
+        i = 0;
+        var meuTimer;
+
+        function frente() {
+            clearInterval(meuTimer);
+            tempo();
+            if (i == 0) {
+                document.all.teste.src = 'documento/jesus.html';
+                i = 1;
+            }
+            else if (i == 1) {
+                document.all.teste.src = 'documento/sao_jose.html';
+                i = 2;
+            }
+            else if (i == 2) {
+                document.all.teste.src = 'documento/sao_pedro.html';
+                i = 3;
+            }
+            else {
+                document.all.teste.src = 'documento/index.html';
+                i = 0;
+            }
+        }
+
+        function atras() {
+            clearInterval(meuTimer);
+            tempo();
+            if (i == 3) {
+                document.all.teste.src = 'documento/sao_jose.html';
+                i = 2;
+            }
+            else if (i == 2) {
+                document.all.teste.src = 'documento/jesus.html';
+                i = 1;
+            }
+            else if (i == 1) {
+                document.all.teste.src = 'documento/index.html';
+                i = 0;
+            }
+            else {
+                document.all.teste.src = 'documento/sao_pedro.html';
+                i = 3;
+            }
+        }
+
+        function tempo() {
+            meuTimer = setInterval("frente()", 4000);
+        }
+
+        // Inicia o carrossel automático assim que a página carrega
+        window.onload = tempo;
+
+        // Seleciona o container dos cards
+        const container = document.querySelector('.cards-container');
+        const btnProx = document.querySelector('.seta:nth-child(2)'); // Segunda seta (próximo)
+        const btnAnt = document.querySelector('.seta:nth-child(1)');  // Primeira seta (anterior)
+        var btnClick = 0;
+
+        // Função para avançar
+        btnProx.onclick = function () {
+            if (btnClick <= 0) {
+                container.scrollLeft += 550;
+                btnClick = 1;
+            } else {
+                container.scrollLeft += 825;
+                btnClick += 1;
+            }
+        };
+        
+        // Função para voltar
+        btnAnt.onclick = function () {
+            if (btnClick >= 4) {
+                container.scrollLeft -= 550;
+                btnClick = 3;
+            } else {
+                container.scrollLeft -= 825;
+                btnClick -= 1;
+            }
+        };
+
+        function irPara(indice) {
+            const container = document.querySelector('.cards-container');
+            // Multiplica o índice pela largura do card (250px) + gap (20px)
+            if (indice == 0) {
+                container.scrollLeft = 0;
+                btnClick = 0;
+            } else if (indice == 1) {
+                container.scrollLeft = 550;
+            }else if (indice == 2) {
+                container.scrollLeft = 1350;
+            }else if (indice == 3) {
+                container.scrollLeft = 2200;
+            } else {
+                container.scrollLeft = 3000;
+            }
+        }
+    </script>
+</body>
+
+</html>

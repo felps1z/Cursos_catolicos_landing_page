@@ -1,0 +1,459 @@
+/* Estilos Gerais e Cores */
+body {
+    font-family: 'Lato', sans-serif; /* Use fonts do Google como 'Playfair Display' para títulos */
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+}
+
+h2 {
+    color: #D4AF37; /* Dourado */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dourado {
+    color: #D4AF37;
+}
+
+.dark-bg {
+    background-color: #1A1A1A; /* Fundo escuro */
+    color: #fff;
+    padding: 50px 0;
+}
+
+/* Botões CTA */
+.cta-button {
+    background-color: #D4AF37;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cta-button.mustard-bg {
+    background-color: #E6A23C; /* Amarelo Mostarda */
+}
+
+/* Header e Navegação */
+header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #D4AF37;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Estilos das Seções e Grades */
+.apologia-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+/* Estilos da Tabela de Estudo Bíblico */
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto; /* Garante que funcione em celulares */
+}
+
+.biblico-table {
+    width: 100%;
+    margin-bottom: 50px;
+   
+}
+
+.biblico-table th, .biblico-table td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-thumb {
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contato Form */
+form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+/* =========================================
+   ESTILOS ESPECÍFICOS DA PÁGINA DE CURSO
+   ========================================= */
+
+/* Hero Section (Banner do Curso) */
+.curso-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    min-height: 60vh;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.curso-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.hero-image {
+    width: 40%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 2px solid #D4AF37; /* Bordinha dourada elegante */
+}
+
+/* Descrição do Curso */
+.curso-descricao {
+    padding: 80px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container-texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-texto p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Módulos do Curso */
+.curso-modulos {
+    padding: 80px 10%;
+}
+
+.modulos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.modulo-card {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #D4AF37;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.modulo-card:hover {
+    transform: translateY(-5px);
+}
+
+.modulo-card h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.modulo-card h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.modulo-card p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* =========================================
+   SEÇÃO APOLOGÉTICA (BANNER SIMPLIFICADO)
+   ========================================= */
+
+.apologetica-simples-section {
+    background-color: #1A1A1A; /* Fundo geral da página para dar contraste */
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.apologetica-banner {
+    display: flex;
+    background-color: transparent; /* O tom marrom escuro da sua imagem */
+    width: 80%;
+    max-width: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Linha fina e elegante */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Lado do Texto */
+.apologetica-texto {
+    flex: 1;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Linha divisória fina */
+}
+
+.apologetica-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: white; /* Tom bege claro da imagem */
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+    text-align: left;
+    font-weight: normal;
+}
+
+.apologetica-texto p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    color: rgb(194, 194, 194); /* Tom bege mais escuro para o subtítulo */
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Lado da Imagem */
+.apologetica-imagem {
+    flex: 1;
+}
+
+.apologetica-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.apologia-galeria {
+    background-color: #121212; /* Fundo bem escuro como na imagem */
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.categorias-apologia {
+    margin-bottom: 30px;
+}
+
+.categorias-apologia a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categorias-apologia a.active {
+    color: #D4AF37; /* Dourado para o selecionado */
+}
+
+/* Container que permite o deslize */
+.cards-container {
+    display: flex;
+    overflow-x: auto; /* Cria o scroll horizontal */
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 2%;
+    scrollbar-width: none; /* Esconde a barra no Firefox */
+
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none; /* Esconde a barra no Chrome/Safari */
+}
+
+.card {
+    min-width: 250px; /* Largura de cada card */
+    height: 350px;
+    position: relative;
+    filter: grayscale(80%); /* Efeito sóbrio da imagem */
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+}
+
+.controles {
+    margin: 20px 0;
+}
+
+.seta {
+    background: none;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* =========================================
+   ESTILOS DO CARROSSEL DE MAIS CONTEÚDO
+   ========================================= */
+
+/* Divisória dourada inspirada na imagem de referência */
+.divisoria-dourada {
+    text-align: center;
+    border-top: 2px solid #E6A23C; /* Linha mostarda */
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.divisoria-dourada h2 {
+    display: inline-block;
+    background-color: #fff; /* Mesma cor do fundo para "cortar" a linha */
+    padding: 0 20px;
+    margin-top: -35px; /* Puxa o título para cima da linha */
+    position: relative;
+    color: #E6A23C;
+}
+
+.divisoria-dourada p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* Container do carrossel */
+.vitrine-carousel-container {
+    width: 80%; /* Mesma largura das outras grades */
+    margin: 0 auto;
+    overflow: hidden; /* Esconde o que está fora da janela do carrossel */
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Faixa deslizante - ATUALIZADO */
+.vitrine-track {
+    display: flex; /* Alinha as imagens em linha */
+    width: 2500px; /* Aumentado para acomodar itens maiores. Ajuste conforme necessário. */
+    animation: rolar 35s linear infinite; /* Animação um pouco mais lenta para itens maiores */
+    will-change: transform; /* Otimização de performance */
+    align-items: center; /* Centraliza itens verticalmente se tiverem alturas diferentes */
+}
+
+/* Pausar ao passar o mouse */
+.vitrine-track:hover {
+    animation-play-state: paused;
+}
+
+/* Item individual do carrossel - ATUALIZADO */
+.vitrine-item {
+    flex: 0 0 350px; /* Largura aumentada para proporcionalidade */
+    margin-right: 25px; /* Espaço entre as imagens aumentado */
+}
+
+/* Imagem dentro do item - ATUALIZADO (AQUI ESTÁ A MUDANÇA PRINCIPAL) */
+.vitrine-item img {
+    width: 100%;
+    height: 350px; /* ALTURA AUMENTADA SIGNIFICATIVAMENTE (era 180px) */
+    object-fit: cover; /* Recorta a imagem se necessário sem distorcer */
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Sombra mais robusta para itens maiores */
+    transition: transform 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito sutil ao passar o mouse individualmente na imagem */
+.vitrine-item img:hover {
+    transform: scale(1.03); /* Aumenta levemente a imagem */
+}
+
+/* DEFINIÇÃO DA ANIMAÇÃO (KEYFRAMES) - ATUALIZADO */
+@keyframes rolar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Ajuste este valor dependendo de quantos itens você tem.
+           Para 6 itens de 350px + 25px gap, o total é 2250px.
+           Vamos mover esse valor para a esquerda. */
+        transform: translateX(-2250px);
+    }
+}
