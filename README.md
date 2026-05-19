@@ -1,24 +1,69 @@
-# Cursos Católicos Santa Maria - Landing Page 🕊️
+# Cursos Católicos ✝️
 
-Uma landing page desenvolvida como projeto acadêmico para a disciplina de Desenvolvimento Web. O site tem como objetivo apresentar e organizar conteúdos, cursos e estudos voltados à fé católica de forma clara e acessível.
+Landing page desenvolvida para a disciplina de Desenvolvimento Web.
 
-## 🛠️ Tecnologias Utilizadas
+O projeto apresenta cursos e conteúdos católicos de forma simples, organizada e responsiva.
 
-* **HTML5:** Estruturação semântica da página e modularização de conteúdo.
-* **CSS3:** Estilização visual e layout (`style.css`).
+---
 
-## 📁 Estrutura do Projeto
+## 🚀 Tecnologias Utilizadas
 
-O projeto foi construído separando os conteúdos em diferentes módulos e pastas para melhor organização:
+* HTML5
+* CSS3
+* JavaScript
 
-* `index.html`: Página principal da aplicação.
-* `style.css`: Arquivo principal de estilos.
-* **Iframes** (`iframe_eucaristia.html`, `iframe_maria.html`, `iframe_obras.html`, `iframe_papa.html`, `iframe_imagens.html`): Páginas com conteúdos específicos integradas à página principal.
-* **Cards** (`apologia_cards/`, `cursos_cards/`, `estudo_cards/`): Diretórios contendo as estruturas para os cartões de conteúdo de cada seção.
-* `img/`: Diretório de imagens e recursos visuais utilizados no site.
+---
 
-## 🚀 Como executar o projeto localmente
+## 📚 Funcionalidades
 
-1. Clone este repositório em sua máquina:
-   ```bash
-   git clone [https://github.com/felps1z/Cursos_catolicos_landing_page.git](https://github.com/felps1z/Cursos_catolicos_landing_page.git)
+* Página inicial responsiva
+* Cards de cursos
+* Área de artigos/apologética
+* Navegação simples e intuitiva
+* Organização por páginas de conteúdo
+
+---
+
+## 📂 Estrutura do Projeto
+
+```bash
+Cursos_catolicos_landing_page/
+│
+├── apologia_cards/
+├── cursos_cards/
+├── assets/
+├── index.html
+└── README.md
+```
+
+---
+
+## ⚙️ Como Executar
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/cursos-catolicos.git
+```
+
+2. Abra a pasta do projeto.
+
+3. Execute o arquivo `index.html` no navegador.
+
+---
+
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido como atividade acadêmica para praticar conceitos de:
+
+* estruturação de páginas web;
+* iframes;
+* organização de conteúdo;
+* estilização com CSS;
+* navegação entre páginas.
+
+---
+
+## 👨‍💻 Desenvolvido por
+
+Felipe
