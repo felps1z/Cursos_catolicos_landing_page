@@ -43,12 +43,18 @@ Cursos_catolicos_landing_page/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/felps1z/cursos-catolicos.git
+git clone https://github.com/felps1z/cursos_catolicos_landing_page.git
 ```
 
 2. Abra a pasta do projeto.
 
-3. Execute o arquivo `index.html` no navegador.
+```bash
+cd smash-drop
+```
+
+### 3. Execute um servidor local
+
+Exemplo usando VS Code + Live Server.
 
 ---
 
