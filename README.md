@@ -56,6 +56,12 @@ cd cursos_catolicos_landing_page
 
 Exemplo usando VS Code + Live Server.
 
+Ou utilize:
+
+```bash
+npx serve
+```
+
 ---
 
 ## 🎯 Objetivo
