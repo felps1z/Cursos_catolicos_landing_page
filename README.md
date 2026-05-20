@@ -43,7 +43,7 @@ Cursos_catolicos_landing_page/
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/cursos-catolicos.git
+git clone https://github.com/felps1z/cursos-catolicos.git
 ```
 
 2. Abra a pasta do projeto.
