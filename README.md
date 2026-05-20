@@ -49,7 +49,7 @@ git clone https://github.com/felps1z/cursos_catolicos_landing_page.git
 2. Abra a pasta do projeto.
 
 ```bash
-cd smash-drop
+cd cursos_catolicos_landing_page
 ```
 
 ### 3. Execute um servidor local
